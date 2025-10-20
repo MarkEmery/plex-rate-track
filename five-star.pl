@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-$server='https://<IP-address.hexstring.plex.direct:<port>';
+$server='https://<IP-address.hexstring>.plex.direct:<port>';
 $client='<USERNAME>';
 
 $sessions=`curl -o - -s "$server/status/sessions"`;
@@ -21,4 +21,6 @@ if ($session) {
    $title=~s/&#8217;/'/g;
    $title=~s/&#39;/'/g;
    print "Rated ". $originalTitle ."'s track $title as five star";
+} else {
+   print "Sorry, $client, I didn't find anything playing.\n";
 }
