@@ -1,8 +1,9 @@
 # plex-rate-track
 
-PlexAmp's Siri integration allows drivers to pick songs or artists with spoken Siri instructions, play, stop or skip tracks.
-It's ideal for hands-free operation while driving. One thing it can't do, is allow users to rate the tracks. This is where this simple script comes in.
-When run, the Perl script finds the track being played by the configured user and rates it 5 stars. Note that Plex uses a rating system allowing half stars, but internally uses integers, so 1 stars is 2, 5 stars is 10.
+PlexAmp's Siri integration allows drivers to pick songs or artists, play, stop or skip tracks with spoken instructions.
+It's ideal for hands-free operation while driving for reasons that shouldn't need explaining.
+One thing it can't do, is allow users to rate the tracks. This is where this simple script and the Plex API comes in.
+When run, the Perl script finds the track being played by the configured user and rates it 5 stars.
 It's assumed that WireGuard, Tailscale or another VPN is being used, allowing direct SSH access from the iPhone to server.
 
 **Apple Shortcut**
@@ -21,12 +22,14 @@ Grab the part that looks like a hyphenated IP address and long hex string.
 **Server Script five-star.pl**
 
 Download the five-star.pl from this repo and update the values for $server and $client, ensuring you keep the .plex.direct:port part of the URL.
+Note that Plex uses a rating system allowing half stars, but internally uses integers, so 1 stars is 2, 5 stars is 10.
+If the user wants to rate tracks with other values, similar Apple Shortcuts and scripts are needed, one set per rating level.
 
 **Script Auth**
 
-In the Plex GUI, go to Settings > Network and add your subnet and 127.0.0.1 under ‘List of IP addresses and networks that are allowed without auth’
+In the Plex GUI, go to Settings > Network and add 127.0.0.1 under ‘List of IP addresses and networks that are allowed without auth’. If you have issues, add your local LAN subnet to the list.
 
 **Debugging**
 
-If Siri responds with "Done" or "That's done", check that the shortcut doesn't have any elements such as 'Shell Script Result' or 'Text' in red. If you do, reset them so they're blue.
+If Siri responds with "Done" or "That's done", check that the shortcut doesn't have any elements such as 'Shell Script Result' or 'Text' in red. If you do, correct them until they're blue.
 
