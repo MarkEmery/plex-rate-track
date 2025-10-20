@@ -19,3 +19,5 @@ See the code.
 Script Auth
 
 In the Plex GUI, go to Settings > Network and add your subnet and 127.0.0.1 under ‘List of IP addresses and networks that are allowed without auth’
+
+If Siri responds with "Done" or "That's done", check the shortcut doesn't have any elements such as 'Shell Script Result' or 'Text' in red. If you do, reset them so they're blue.
