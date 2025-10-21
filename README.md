@@ -32,5 +32,4 @@ In the Plex GUI, go to Settings > Network and add 127.0.0.1 under ‘List of IP 
 
 **Debugging**
 
-If Siri responds with "Done" or "That's done", check that the shortcut doesn't have any elements such as 'Shell Script Result' or 'Text' in red. If you do, correct them until they're blue.
-
+If Siri responds with "Done" or "That's done", check that the shortcut doesn't have any elements such as 'Shell Script Result' or 'Text' in red. If it does, correct them until they're blue.
