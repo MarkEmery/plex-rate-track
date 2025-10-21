@@ -1,6 +1,6 @@
 # plex-rate-track
 
-PlexAmp's Siri integration allows drivers to pick songs or artists to play, play, stop or skip tracks with spoken instructions.
+PlexAmp's Siri integration allows drivers to pick songs or artists to play, play, stop or skip the current track with spoken instructions.
 It's ideal for hands-free operation while driving for reasons that shouldn't need explaining.
 One thing it can't do, is allow users to rate the tracks. This is where a simple script and the Plex API comes in.
 When run, the Perl script uses the API to find the track being played by the configured user and rates it 5 stars.
