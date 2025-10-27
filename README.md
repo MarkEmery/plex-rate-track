@@ -9,7 +9,7 @@ It is also assumed that Perl and curl are installed on the server. The author is
 
 **Apple Shortcut**
 
-Set up a shortcut as per the screenshot below and name it 'Five Star'. When needed, saying 'Hey Siri, Fire Star' will run it. A spoken acknowledgement will be returned.
+Set up a shortcut as per the screenshot below and name it 'Five Star'. Ensure to run it within the Shortcuts app first, as doing so appears to register it with Siri. When needed, saying 'Hey Siri, Fire Star' will run it. A spoken acknowledgement will be returned.
 
 <img width="320" alt="IMG_2797" src="https://github.com/user-attachments/assets/c1051650-a560-4ebd-badb-66e864cd7980" />
 <img width="320" height="1389" alt="IMG_2512" src="https://github.com/user-attachments/assets/1112a48c-0cdf-4f57-a0fa-d238fbd2f744" />
